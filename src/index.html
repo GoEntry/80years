@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80 лет победе</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="images/logo_80_2.png">
+</head>
+<body>
+    <div class="main">
+        <object data="images/80.svg" type="image/svg+xml" class="svg-content" id="svg-object">
+            Ваш браузер не поддерживает SVG
+        </object>
+    </div>
+
+    <!--
+    <div class="content">
+        <h1>80 лет Великой Победе</h1>
+        <p>9 мая 2025 года исполняется 80 лет со дня Победы в Великой Отечественной войне. Это один из самых важных праздников для нашей страны, день памяти и гордости за подвиг народа, отстоявшего свободу и независимость Родины.</p>
+        
+        <h2>Историческое значение</h2>
+        <p>Великая Отечественная война 1941-1945 годов унесла миллионы жизней, разрушила города и села, принесла горе и страдания. Но вместе с тем она показала невероятную силу духа, мужество и героизм советского народа.</p>
+        
+        <h2>Память о подвиге</h2>
+        <p>Сегодня наш долг – сохранить память о тех страшных событиях и о великом подвиге народа-победителя. Передать эту память будущим поколениям, чтобы никогда не повторились ужасы войны.</p>
+        
+        <h2>Вечная слава героям</h2>
+        <p>Мы помним, мы гордимся великим подвигом нашего народа. Вечная слава героям, павшим в боях за свободу и независимость нашей Родины!</p>
+    </div>
+    --->
+
+    <script>
+        // Скрипт для установки правильных размеров SVG
+        document.addEventListener('DOMContentLoaded', function() {
+            var svgObject = document.getElementById('svg-object');
+            svgObject.onload = function() {
+                var svgDoc = svgObject.contentDocument;
+                var svg = svgDoc.querySelector('svg');
+                if (svg) {
+                    svg.setAttribute('width', '100%');
+                    svg.setAttribute('height', 'auto');
+                    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+                }
+            };
+        });
+    </script>
+</body>
+</html>
